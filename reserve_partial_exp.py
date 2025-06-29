@@ -10,7 +10,7 @@ import psutil
 import numpy as np
 
 def print_memory_usage(label=""):
-    """打印当前内存使用情况"""
+    """ 打印当前内存使用情况"""
     process = psutil.Process(os.getpid())
     memory_info = process.memory_info()
     print(f"[{label}] 当前内存使用: {memory_info.rss / 1024 / 1024:.2f} MB")
