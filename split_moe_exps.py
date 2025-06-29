@@ -13,7 +13,7 @@ def print_memory_usage():
     print(f"当前内存使用: {process.memory_info().rss / 1024 / 1024:.2f} MB")
 
 def split_moe_experts(model_path, output_dir):
-    """将MOE模型权重按更细粒度分割，特别是将每层的专家分别存储"""
+    """将MO   E模型权重按更细粒度分割，特别是将每层的专家分别存储"""
     print("开始细粒度分割MOE模型权重...")
     print_memory_usage()
     

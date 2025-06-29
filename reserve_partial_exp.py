@@ -20,7 +20,7 @@ def print_memory_usage(label=""):
     print(f"系统内存: 总计={virtual_memory.total / 1024 / 1024 / 1024:.2f}GB, 可用={virtual_memory.available / 1024 / 1024 / 1024:.2f}GB, 使用率={virtual_memory.percent}%")
 
 def clean_memory():
-    """清理内存"""
+    """   清理内存"""
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()

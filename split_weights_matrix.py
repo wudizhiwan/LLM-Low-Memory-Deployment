@@ -10,7 +10,7 @@ def print_memory_usage():
     print(f"当前内存使用: {process.memory_info().rss / 1024 / 1024:.2f} MB")
 
 def split_weights(model_path, output_dir):
-    print("开始分割模型权重...")
+    print("开始分割模   型权重...")
     print_memory_usage()
     
     # 创建输出目录
