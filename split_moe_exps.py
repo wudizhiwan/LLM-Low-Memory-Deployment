@@ -7,7 +7,7 @@ from safetensors.torch import load_file, save_file
 from tqdm import tqdm
 
 def print_memory_usage():
-    """ 打印当前内存使用情况"""
+    """  打印当前内存使用情况"""
     import psutil
     process = psutil.Process(os.getpid())
     print(f"当前内存使用: {process.memory_info().rss / 1024 / 1024:.2f} MB")
